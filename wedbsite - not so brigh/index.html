@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamran Malik — Creative Content Specialist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    // Apply theme before CSS renders to prevent any flash
+    (function() {
+      var saved = localStorage.getItem('dark-mode');
+      var isDark = saved === null || saved === 'true';
+      if (isDark) {
+        document.documentElement.classList.add('dark-mode');
+      } else {
+        document.documentElement.classList.remove('dark-mode');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Page curtain (load animation) -->
+  <div id="page-curtain"></div>
+  <script>
+    setTimeout(function() {
+      var c = document.getElementById('page-curtain');
+      if (c) { c.style.display = 'none'; }
+    }, 1500);
+  </script>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- ── HEADER ─────────────────────────────────────────── -->
+  <header>
+    <div class="container nav-container">
+      <div class="nav-left">
+        <img src="logo.png" alt="Kamran Media Logo" class="header-logo" />
+        <h1 class="logo">Kamran Media</h1>
+      </div>
+      <nav id="main-nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <label class="switch" aria-label="Toggle Dark Mode">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ───────────────────────────────────────────── -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Houston, TX &nbsp;·&nbsp; Est. 2023</p>
+          <h2 class="hero-title">
+            Creative<br>
+            Content<br>
+            Specialist
+          </h2>
+          <p class="hero-subtitle">I create high-impact video content that stands out and engages audiences.</p>
+          <p class="hero-tools">After Effects&nbsp;&nbsp;·&nbsp;&nbsp;Premiere Pro&nbsp;&nbsp;·&nbsp;&nbsp;Photoshop&nbsp;&nbsp;·&nbsp;&nbsp;Illustrator&nbsp;&nbsp;·&nbsp;&nbsp;Audition</p>
+          <div class="hero-cta-row">
+            <a href="#portfolio" class="button"><span>View My Work</span></a>
+            <span class="hero-scroll-hint">
+              <span class="scroll-line"></span>
+              Scroll to explore
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-frame">
+        <div class="hero-frame-inner"></div>
+      </div>
+
+      <div class="hero-counter" id="hero-counter">01</div>
+    </section>
+
+    <!-- ── PORTFOLIO ──────────────────────────────────────── -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <p class="section-label reveal">Selected Work</p>
+        <h2 class="reveal d1">My Work</h2>
+
+        <div class="portfolio-grid">
+
+          <!-- Item 01: Showreel -->
+          <div class="portfolio-item reveal-scale d2">
+            <span class="portfolio-item-num">01</span>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/mSCx026G8qk?rel=0&modestbranding=1"
+                title="Showreel"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="portfolio-item-body">
+              <h3>Showreel</h3>
+              <p>A curated showcase of my best work — cinematic editing, motion graphics, 3D animation, and visual storytelling across a range of projects and styles.</p>
+              <a href="https://www.youtube.com/watch?v=mSCx026G8qk" target="_blank" class="view-project-link">
+                Watch on YouTube <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 02: Design-A-Thon 2026 -->
+          <div class="portfolio-item reveal-scale d3">
+            <span class="portfolio-item-num">02</span>
+            <div class="video-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/MQYwugJX1F8?rel=0&modestbranding=1"
+                title="Design-A-Thon 2026"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="portfolio-item-body">
+              <h3>Design-A-Thon 2026</h3>
+              <p>Event coverage of Design-A-Thon 2026 — capturing the energy, creativity, and competition of a live design challenge through cinematic shooting, dynamic editing, and motion graphics.</p>
+              <a href="https://youtu.be/MQYwugJX1F8" target="_blank" class="view-project-link">
+                Watch on YouTube <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ──────────────────────────────────────────── -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <p class="section-label reveal">The Person</p>
+        <h2 class="reveal d1">About Kamran Malik</h2>
+
+        <div class="about-content">
+
+          <!-- Profile -->
+          <div class="about-card reveal d1">
+            <div class="card-label">Profile</div>
+            <h3>Profile</h3>
+            <div class="card-body">
+              <p>
+                Video editor and digital content creator specialising in short-form and long-form
+                storytelling across YouTube, Instagram, and TikTok. Skilled in motion graphics,
+                cinematic editing, and 3D animation.
+              </p>
+            </div>
+            <span class="card-hint">Click to reveal</span>
+          </div>
+
+          <!-- Skills -->
+          <div class="about-card reveal d2">
+            <div class="card-label">Skills</div>
+            <h3>Skills</h3>
+            <div class="card-body">
+              <ul>
+                <li>Short &amp; long-form video editing</li>
+                <li>Motion graphics &amp; visual effects</li>
+                <li>3D modeling &amp; animation</li>
+                <li>Cinematic transitions &amp; color grading</li>
+                <li>Gaming &amp; event content production</li>
+              </ul>
+            </div>
+            <span class="card-hint">Click to reveal</span>
+          </div>
+
+          <!-- Tools -->
+          <div class="about-card reveal d3">
+            <div class="card-label">Tools</div>
+            <h3>Tools</h3>
+            <div class="card-body">
+              <h4>Software</h4>
+              <ul>
+                <li>Premiere Pro</li>
+                <li>After Effects</li>
+                <li>Blender</li>
+                <li>Photoshop</li>
+                <li>Audition</li>
+              </ul>
+              <h4>Equipment</h4>
+              <ul>
+                <li>DSLR / Mirrorless Cameras</li>
+                <li>Studio Lighting</li>
+                <li>Gimbals &amp; Stabilizers</li>
+                <li>Audio Recording</li>
+              </ul>
+            </div>
+            <span class="card-hint">Click to reveal</span>
+          </div>
+
+          <!-- Experience -->
+          <div class="about-card reveal d2">
+            <div class="card-label">Experience</div>
+            <h3>Experience</h3>
+            <div class="card-body">
+              <h4>Photographer &amp; Sales Rep — Visenta</h4>
+              <ul>
+                <li>On-site portrait photography, real-time editing, and direct sales</li>
+                <li>Full workflow ownership from capture to print</li>
+              </ul>
+              <h4>Founder &amp; Event Producer — FS League</h4>
+              <ul>
+                <li>Founded and produced a competitive gaming tournament with cash prize</li>
+                <li>Directed cinematic promo trailer with original 3D animation</li>
+              </ul>
+            </div>
+            <span class="card-hint">Click to reveal</span>
+          </div>
+
+          <!-- Education -->
+          <div class="about-card reveal d3">
+            <div class="card-label">Education</div>
+            <h3>Education</h3>
+            <div class="card-body">
+              <p><strong>Lonestar Kingwood Community College</strong></p>
+              <p>Video / Post-Production &nbsp;·&nbsp; 2023–Present</p>
+              <h4 style="margin-top:24px;">Interests</h4>
+              <ul>
+                <li>Competitive Gaming</li>
+                <li>Cinematography</li>
+                <li>3D Art &amp; Design</li>
+                <li>Digital Photography</li>
+              </ul>
+            </div>
+            <span class="card-hint">Click to reveal</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────── -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <p class="section-label reveal">Get In Touch</p>
+        <h2 class="reveal d1">Contact Kamran Malik</h2>
+        <p class="reveal d2">Feel free to reach out for collaborations, inquiries, or just to connect.</p>
+
+        <div class="contact-info reveal d3">
+          <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +1 832-622-0384</p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <strong>Email:</strong>
+            <a href="mailto:malikalex85@gmail.com">malikalex85@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="social-links reveal d4">
+          <a href="https://www.linkedin.com/in/kamran-malik-8a8bb9224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.tiktok.com/@linkwarrior85" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.instagram.com/linkwarrior85/?hl=en" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@LinkWarrior85" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Kamran Media. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ── SCRIPTS ─────────────────────────────────────────── -->
+  <script>
+    /* ── Dark Mode + Easter Egg ─────────────────── */
+    const toggle = document.getElementById('theme-toggle');
+    const savedMode = localStorage.getItem('dark-mode');
+    const isDark = savedMode === null || savedMode === 'true';
+    // Sync body class and toggle with the html-level class set in <head>
+    document.body.classList.toggle('dark-mode', isDark);
+    toggle.checked = isDark;
+
+    let flipCount = 0;
+    let eggFired  = false;
+
+    toggle.addEventListener('change', () => {
+      document.documentElement.classList.toggle('dark-mode', toggle.checked);
+      document.body.classList.toggle('dark-mode', toggle.checked);
+      localStorage.setItem('dark-mode', String(toggle.checked));
+
+      flipCount++;
+      if (flipCount >= 7 && !eggFired) {
+        eggFired = true;
+        fireEasterEgg();
+      }
+    });
+
+    function fireEasterEgg() {
+      const ball  = document.getElementById('egg-ball');
+      const hoop  = document.getElementById('egg-hoop');
+      const toast = document.getElementById('egg-toast');
+
+      const toggleEl = document.querySelector('.switch');
+      const tr = toggleEl.getBoundingClientRect();
+      const startX = tr.left + tr.width / 2;
+      const startY = tr.top  + tr.height / 2;
+
+      const hoopX = window.innerWidth  / 2;
+      const hoopY = window.innerHeight - 90;
+
+      ball.style.left    = startX + 'px';
+      ball.style.top     = startY + 'px';
+      ball.style.opacity = '1';
+      ball.style.transform = 'scale(1) rotate(0deg)';
+      ball.textContent   = '🌑';
+
+      hoop.classList.add('visible');
+
+      ball.style.setProperty('--sx', startX + 'px');
+      ball.style.setProperty('--sy', startY + 'px');
+      ball.style.setProperty('--ex', hoopX  + 'px');
+      ball.style.setProperty('--ey', hoopY  + 'px');
+      ball.classList.add('shooting');
+
+      setTimeout(() => {
+        ball.textContent = '🏀';
+        ball.classList.add('swish');
+        hoop.classList.add('swish');
+
+        setTimeout(() => {
+          toast.classList.add('visible');
+          setTimeout(() => {
+            toast.classList.remove('visible');
+            setTimeout(() => {
+              ball.classList.remove('shooting','swish');
+              hoop.classList.remove('visible','swish');
+              ball.style.opacity = '0';
+              flipCount = 0;
+              eggFired  = false;
+            }, 600);
+          }, 2800);
+        }, 300);
+      }, 900);
+    }
+
+    /* ── Scroll Progress Bar ─────────────────────── */
+    const bar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (window.scrollY / total * 100) + '%';
+    }, { passive: true });
+
+    /* ── Header scroll shadow ────────────────────── */
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    /* ── Scroll Reveal (IntersectionObserver) ────── */
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+    const observer  = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    /* ── Hero counter ticks on scroll ────────────── */
+    const sections = document.querySelectorAll('main > section');
+    const counter  = document.getElementById('hero-counter');
+    const nums     = ['01','02','03','04'];
+    let   lastIdx  = 0;
+
+    window.addEventListener('scroll', () => {
+      sections.forEach((sec, i) => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          if (i !== lastIdx) {
+            lastIdx = i;
+            counter.style.opacity = '0';
+            counter.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              counter.textContent = nums[i] || '0' + (i+1);
+              counter.style.opacity   = '';
+              counter.style.transform = '';
+            }, 220);
+          }
+        }
+      });
+    }, { passive: true });
+
+    counter.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
+
+    /* ── Parallax hero frame ─────────────────────── */
+    const frame = document.querySelector('.hero-frame');
+    if (frame) {
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        frame.style.transform = `translateY(calc(-50% + ${y * 0.18}px))`;
+      }, { passive: true });
+    }
+
+    /* ── About cards: click to expand/collapse ── */
+    document.querySelectorAll('.about-card').forEach(card => {
+      card.addEventListener('click', () => card.classList.toggle('open'));
+    });
+
+  </script>
+
+  <!-- ── EASTER EGG: Basketball trash can ─────────────── -->
+  <div id="egg-hoop" aria-hidden="true">
+    <div id="egg-backboard"></div>
+    <div id="egg-rim"></div>
+    <div id="egg-net">
+      <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="5,0 10,40" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+        <polyline points="15,0 17,40" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+        <polyline points="25,0 24,40" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+        <polyline points="35,0 31,40" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+        <polyline points="45,0 38,40" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+        <polyline points="55,0 50,40" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+        <polyline points="5,0 55,0" stroke="#c8a96e" stroke-width="1.5" fill="none"/>
+        <polyline points="6,10 54,10" stroke="#c8a96e" stroke-width="1" fill="none" opacity="0.6"/>
+        <polyline points="8,22 50,22" stroke="#c8a96e" stroke-width="1" fill="none" opacity="0.4"/>
+        <polyline points="10,34 48,34" stroke="#c8a96e" stroke-width="1" fill="none" opacity="0.2"/>
+      </svg>
+    </div>
+  </div>
+  <div id="egg-ball" aria-hidden="true">🌑</div>
+  <div id="egg-toast" aria-hidden="true">🏀 Buckets!</div>
+</body>
+</html>
